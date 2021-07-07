@@ -36,6 +36,7 @@ jobs:
           args: >
             -Dsonar.organization=org-simple-interest
             -Dsonar.projectKey=SimpleInterestCalc2
+            -Dsonar.sources=src
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
